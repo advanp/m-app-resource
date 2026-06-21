@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>乐鱼体育 · 产品说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            background-color: #f8f6f0;
+            color: #2c2c2c;
+            line-height: 1.7;
+            padding: 2rem 1rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .hero {
+            text-align: center;
+            padding: 2.5rem 1rem 2rem;
+            border-bottom: 1px solid #ddd8cc;
+            margin-bottom: 2.5rem;
+        }
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            letter-spacing: 0.2rem;
+            color: #3b3a36;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            color: #6e6a60;
+            margin-top: 0.6rem;
+        }
+        .summary {
+            background: #f2efe9;
+            padding: 1.8rem 2rem;
+            border-left: 6px solid #a0937c;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 2.2rem;
+            font-style: normal;
+        }
+        .summary strong {
+            color: #4b463c;
+        }
+        .section {
+            margin-bottom: 2.5rem;
+        }
+        .section h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            border-bottom: 1px dashed #cbc3b2;
+            padding-bottom: 0.3rem;
+            margin-bottom: 1rem;
+            color: #3b3730;
+        }
+        .section p {
+            margin-bottom: 0.9rem;
+            text-align: justify;
+        }
+        .highlight-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            margin: 1.2rem 0 1.8rem;
+        }
+        .highlight-item {
+            flex: 1 1 200px;
+            background: #f2efe9;
+            padding: 1.2rem 1rem;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+            border: 1px solid #e2dcd0;
+        }
+        .highlight-item h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 0.3rem;
+            color: #4f4a40;
+        }
+        .highlight-item p {
+            font-size: 0.95rem;
+            color: #5e5950;
+            margin: 0;
+        }
+        .tip-box {
+            background: #edeae0;
+            border: 1px solid #cfc7b7;
+            border-radius: 10px;
+            padding: 1.5rem 1.8rem;
+            margin: 2rem 0;
+            position: relative;
+        }
+        .tip-box::before {
+            content: "📌";
+            position: absolute;
+            top: -0.8rem;
+            left: 1rem;
+            background: #f8f6f0;
+            padding: 0 0.4rem;
+            font-size: 1.4rem;
+        }
+        .tip-box p {
+            margin: 0.2rem 0;
+        }
+        .faq-summary {
+            background: #f2efe9;
+            padding: 1.5rem 1.8rem;
+            border-radius: 10px;
+            margin: 2.5rem 0;
+        }
+        .faq-summary details {
+            margin-bottom: 0.8rem;
+            border-bottom: 1px solid #d8d1c3;
+            padding-bottom: 0.6rem;
+        }
+        .faq-summary details:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .faq-summary summary {
+            font-weight: 500;
+            cursor: pointer;
+            color: #3b3730;
+            padding: 0.2rem 0;
+        }
+        .faq-summary summary::-webkit-details-marker {
+            color: #a0937c;
+        }
+        .faq-summary p {
+            margin: 0.5rem 0 0 0.8rem;
+            color: #5a554b;
+        }
+        .visit-note {
+            font-size: 0.95rem;
+            background: #f9f7f2;
+            padding: 1rem 1.5rem;
+            border: 1px solid #d8d1c3;
+            border-radius: 30px;
+            text-align: center;
+            margin: 2.5rem 0 1.5rem;
+            color: #4d4840;
+        }
+        .visit-note a {
+            color: #3b3730;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: #b3a994;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .visit-note a:hover {
+            color: #685e4b;
+            text-decoration-color: #685e4b;
+        }
+        .footer {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #8c8679;
+            border-top: 1px solid #ddd8cc;
+            padding-top: 1.8rem;
+            margin-top: 2rem;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem 0.8rem;
+            }
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+            .summary {
+                padding: 1.2rem 1.2rem;
+            }
+            .highlight-item {
+                flex: 1 1 100%;
+            }
+            .tip-box {
+                padding: 1.2rem 1.2rem;
+            }
+            .faq-summary {
+                padding: 1rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>乐鱼体育</h1>
+        <p>一份持续关注与使用导览</p>
+    </div>
+
+    <div class="summary">
+        <p><strong>再次访问，如同翻开熟悉的章节。</strong> 对于日常关注体育资讯与赛事动态的用户而言，<a href="https://m-app-leyu.com.cn">乐鱼体育</a> 提供了一个持续更新的内容源。这里汇集了多个项目的赛程、数据解读以及用户讨论，适合作为日常浏览与信息回溯的参考渠道。</p>
+    </div>
+
+    <div class="section">
+        <h2>产品定位 · 从收藏到习惯</h2>
+        <p>在信息流快速更迭的背景下，将某个平台加入收藏夹往往意味着认可其持续提供的价值。<strong>乐鱼体育</strong> 在产品设计上倾向于将赛事数据与社区内容整合在同一界面，减少多次跳转的成本。无论是查看赛果、浏览前瞻，还是参与实时讨论，平台都试图让用户在一次访问中完成多个动作。</p>
+        <p>对于经常需要回顾特定赛事或队伍表现的用户，<strong>乐鱼体育</strong> 的栏目结构相对稳定，保存书签后再次返回时能够直接定位，无需重新适应布局。这也意味着，收藏的价值会随着使用频次的增加而逐渐显现。</p>
+    </div>
+
+    <div class="section">
+        <h2>亮点特征 · 信息组织与可读性</h2>
+        <div class="highlight-grid">
+            <div class="highlight-item">
+                <h3>赛程日历式呈现</h3>
+                <p>以时间轴方式排列即将开赛与已结束的比赛，方便纵向对比密度与节奏。</p>
+            </div>
+            <div class="highlight-item">
+                <h3>数据卡片简洁</h3>
+                <p>技术统计与实时比分采用高对比度卡片，关键数字一目了然。</p>
+            </div>
+            <div class="highlight-item">
+                <h3>社区讨论聚合</h3>
+                <p>每场比赛下方附带话题入口，便于查看其他用户的分析与评论。</p>
+            </div>
+        </div>
+        <p>这些特征并非追求炫目效果，而是服务于一个核心目的：降低获取信息时的认知负担。当用户再次访问 <a href="https://m-app-leyu.com.cn">乐鱼体育</a> 时，界面元素的位置与逻辑保持一致，肌肉记忆与视觉预期能够快速匹配。</p>
+    </div>
+
+    <div class="section">
+        <h2>使用建议 · 建立个人的浏览节奏</h2>
+        <p>熟悉一个平台需要时间，而建立习惯则依赖于稳定的交互反馈。建议新用户先花少量时间浏览主页的板块分布，然后选择自己最常关注的 1-2 项赛事作为切入点。随着使用次数增加，可以逐步将收藏夹中的链接调整为直达相应赛事频道的快捷方式。</p>
+        <p>对于已经将 <strong>乐鱼体育</strong> 加入收藏夹的用户，可以尝试设定每周固定的浏览时段（例如每周末查看一周赛事汇总），让信息接收变得有节制而非碎片化。与此同时，平台内的搜索功能也支持按队伍或联赛关键词筛选，适合定向追踪特定内容。</p>
+    </div>
+
+    <div class="tip-box">
+        <p><strong>持续关注的小提醒：</strong> 将 <a href="https://m-app-leyu.com.cn">乐鱼体育</a> 保存在浏览器书签栏或阅读列表，有助于保持访问的连贯性。另外，留意平台偶尔调整的页面布局，适应变化后能更顺畅地获取内容。</p>
+    </div>
+
+    <div class="faq-summary">
+        <h2 style="border-bottom: 1px dashed #cbc3b2; padding-bottom: 0.3rem; margin-bottom: 1rem; font-size: 1.4rem; font-weight: 500; color: #3b3730;">常见关注点</h2>
+        <details>
+            <summary>平台是否需要注册才能浏览内容？</summary>
+            <p>大部分赛事数据与赛程信息可直接浏览，部分讨论或个性化功能可能需要注册账号，具体以实际页面提示为准。</p>
+        </details>
+        <details>
+            <summary>如何及时获取特定比赛的更新？</summary>
+            <p>建议使用平台内的“关注”或“提醒”功能（如有），或定期访问并刷新相关赛事页面。收藏夹中的页面链接可帮助快速回访。</p>
+        </details>
+        <details>
+            <summary>移动端与桌面端体验是否一致？</summary>
+            <p>页面针对移动端进行了适配，但布局与桌面端略有差异。核心数据与导航结构保持一致，建议根据自己的常用设备选择访问方式。</p>
+        </details>
+    </div>
+
+    <div class="visit-note">
+        <p>你可以将 <a href="https://m-app-leyu.com.cn">乐鱼体育</a> 加入浏览器的书签栏，以便在需要查阅赛事资讯时快速返回。产品的信息结构与内容会随时间更新，保持关注即可。</p>
+    </div>
+
+    <div class="footer">
+        <p>基于持续使用与观察整理 · 产品说明页</p>
+    </div>
+
+</body>
+</html>
